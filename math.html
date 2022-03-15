@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Your Own Personal Calculator!</h1>
+        <!--<form id="form1" name="form1" method="" >-->
+
+        <link rel="stylesheet" href="style.css"/>
+        <h1>Multiplication</h1>
+        <input id=1 text="EnterNumber1" class="space1" onblur oninput ="multiplication()"><input id=2 text="EnterNumber2"  oninput="multiplication()"> 
+        <br> <input id=3 value=""class="space2" disabled=true>
+        <!--<br> <button onclick="multiplication()"class="spacebutton1" hidden=true>Multiply</button>-->
+        <br>
+        <br>
+        <br>
+        <h1>Division</h1>
+        <input id=4 text="EnterNumber1"class="space1" onblur oninput="division()"><input id=5 text="EnterNumber2"  oninput="division()"> 
+        <br> <input id=6 value=""class="space2" disabled=true>
+        <!--<br> <button onclick="division()"class="spacebutton1" hidden=true>Divide</button>-->
+        <br>
+        <br>
+        <br>
+        <h1>Addition</h1>
+        <input id=7 text="EnterNumber1"class="space1" onblur oninput="addition()" ><input id=8 text="EnterNumber2"  oninput="addition()"> 
+        <br> <input id=9 value=""class="space2" disabled=true>
+        <!--<<br> <button onclick="addition()"class="spacebutton1" hiden=true>Add</button>-->
+        <br>
+        <br>
+        <br>
+        <h1>Subtraction</h1>
+        <input id=10 text="EnterNumber1"class="space1" onblur oninput="subtraction()" ><input id=11 text="EnterNumber2"  oninput="subtraction()"> 
+        <br> <input id=12 value=""class="space2" disabled=true>
+        <!--<<br> <button onclick="subtraction()"class="spacebutton1" hiden=true>Add</button>-->
+        <br>
+        <br>
+        <br>
+        <h1>Square Root</h1>
+        <input id=13 text="EnterNumber1" onblur oninput="squareroot()"> 
+        <br> <input id=14 value="" disabled=true>
+        <!--<<br> <button onclick="subtraction()"class="spacebutton1" hiden=true>Add</button>-->
+        <br>
+        <br>
+        <br>
+        <h1>Powers/Exponents</h1>
+        <input id=15 text="EnterNumber1" onblur oninput="exponents()" ><input id=16 text="EnterNumber2"  oninput="exponents()">
+        <br> <input id=17 value=""class="space2" disabled=true>
+        <!--<<br> <button onclick="subtraction()"class="spacebutton1" hiden=true>Add</button>-->
+        
+
+        
+
+
+
+
+        <!--</form>-->
+
+        <script>
+           function multiplication()
+            {
+                
+                var text1 = document.getElementById("1").value;
+                var text2 = document.getElementById("2").value;
+                //alert(text1);
+                //alert(text2);
+                var text3 = text1*text2;
+                //alert(text3);
+                document.getElementById("3").value = text3;
+                //document.getElementById("form1").submit();
+                
+
+            }
+            function division()
+            {
+
+
+                var text4 = document.getElementById("4").value;
+                var text5 = document.getElementById("5").value;
+                var text6 = text4/text5
+                document.getElementById("6").value = text6
+
+            
+
+            }
+            function addition()
+            {
+
+
+                var text7 = document.getElementById("7").value;
+                var text8 = document.getElementById("8").value;
+                var text9 = Number(text7)+ Number(text8);
+                document.getElementById("9").value = text9
+
+            
+
+            }
+            function subtraction()
+            {
+
+
+                var text10 = document.getElementById("10").value;
+                var text11 = document.getElementById("11").value;
+                var text12 = Number(text10)- Number(text11);
+                document.getElementById("12").value = text12
+                //console.log(Math.subtraction(49-30))
+
+           
+           
+            }
+            function squareroot()
+            {
+
+
+                var text13 = document.getElementById("13").value;
+                var text14 = Math.sqrt (Number(text13));              
+                document.getElementById("14").value = text14
+                //console.log(Math.sqrt(49))
+            
+
+            }
+            function exponents()
+            {
+
+                var text15 = document.getElementById
+            
+            
+
+        
+         
+
+
+    </body>
+</html>
